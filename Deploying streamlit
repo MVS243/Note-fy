@@ -1,0 +1,6 @@
+#deploy the streamlit app using local tunnel
+
+!npm install localtunnel
+!wget -q -O - ipv4.icanhazip.com  #getting ip
+
+!streamlit run app.py &>/content/logs.txt & npx localtunnel --port 8501
